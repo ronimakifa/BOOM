@@ -20,10 +20,15 @@ public class MainActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                num++;
                 if(num%7 == 0){
                     btn.setText("BOOM");
 
+
+                }else{
+                    btn.setText("this is click number" + num);
                 }
+
             }
         });
 
